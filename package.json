@@ -1,0 +1,30 @@
+{
+  "name": "dxlibs-middleware",
+  "version": "1.0.0",
+  "description": "Agrega funcionalidad de middleware a una clase",
+  "author": "dx Team <team@daax.com.ar>",
+  "scripts": {
+    "eslint": "eslint src/**.js",
+    "test-watch": "jest **/test/*.test.js --collectCoverageFrom=./src/**/*.js --coverage --watchPathIgnorePatterns=.*\\.sonar.* --watchAll ",
+    "test": "jest **/test/*.test.js --collectCoverageFrom=./src/**/*.js --coverage",
+    "sonar": "sonar-scanner -Dsonar.projectKey=dxlibs-middleware -Dsonar.sourceEncoding=UTF-8 -Dsonar.host.url=http://localhost:9000 -Dsonar.sources=./src -Dsonar.language=js -Dsonar.exclusions=**.test.js -Dsonar.tests=./test -Dsonar.test.inclusions=./test/**.test.js"
+  },
+  "main": "src/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.0.0",
+    "sinon": "^7.2.3"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dx-team/middleware.git"
+  },
+  "keywords": ["class", "extends", "middleware", "use"],
+  "bugs": {
+    "url": "https://github.com/dx-team/middleware/issues"
+  },
+  "homepage": "https://github.com/dx-team/middleware#readme"
+}

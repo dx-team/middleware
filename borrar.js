@@ -1,34 +1,4 @@
-# dxlibs-middleware <sub><sup><sub><sup>v0.1.2</sup></sub></sup></sub>
-~~~
-Agrega funcionalidad de middleware a una clase
-~~~
-
-## Scripts
-```powershell
-npm run eslint
-```
-```powershell
-npm run test-watch
-```
-```powershell
-npm run test
-```
-```powershell
-npm run sonar
-```
-
-## Instalación
-
-### Como libreria
-```powershell
-npm install --save dxlibs-middleware
-```
-
-## Modo de uso
-
-```javascript
-const Middleware = require("dxlibs-middleware");
-
+const Middleware = require('./src');
 class Ejemplo extends Middleware {
     constructor() {
         super();
@@ -36,7 +6,6 @@ class Ejemplo extends Middleware {
 }
 
 const ejemplo = new Ejemplo();
-
 ejemplo.use(async (array, next) => {
     console.group('Wrapper');
 
@@ -49,7 +18,6 @@ ejemplo.use(async (array, next) => {
 
     return 'Output middle 1';
 });
-
 ejemplo.use(async (array, next) => {
     array.push(array.slice(-2).reduce((t, i) => t + i, 0));
     const last = await next();
@@ -62,7 +30,6 @@ ejemplo.use(async (array, next) => {
 
     return 'Output middle 2';
 });
-
 ejemplo.use(async (array, next) => {
     const last = await next();
 
@@ -79,6 +46,3 @@ ejemplo.run([1, 2, 3, 5, 8, 13, 21], (array) => {
 
     return 'Output main action';
 });
-
-```
----

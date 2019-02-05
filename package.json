@@ -1,6 +1,6 @@
 {
   "name": "dxlibs-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Agrega funcionalidad de middleware a una clase",
   "author": "dx Team <team@daax.com.ar>",
   "scripts": {

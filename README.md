@@ -1,4 +1,4 @@
-# dxlibs-middleware <sub><sup><sub><sup>v0.1.2</sup></sub></sup></sub>
+# dxlibs-middleware <sub><sup><sub><sup>v1.0.0</sup></sub></sup></sub>
 ~~~
 Agrega funcionalidad de middleware a una clase
 ~~~

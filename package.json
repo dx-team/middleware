@@ -12,6 +12,7 @@
   "main": "src/index.js",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^5.13.0",
     "jest": "^24.0.0",
     "sinon": "^7.2.3"
   },
@@ -22,7 +23,12 @@
     "type": "git",
     "url": "git+https://github.com/dx-team/middleware.git"
   },
-  "keywords": ["class", "extends", "middleware", "use"],
+  "keywords": [
+    "class",
+    "extends",
+    "middleware",
+    "use"
+  ],
   "bugs": {
     "url": "https://github.com/dx-team/middleware/issues"
   },
